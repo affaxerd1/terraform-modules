@@ -21,7 +21,7 @@ module "vpc" {
 
 //create nat gateway
 
-module "NAT gateway" {
+module "NAT_gateway" {
   source = "../modules/NAT_gateway"
   public_subnet_az1_id = module.vpc.public_subnet_az1_id
   internet_gateway = module.vpc.internet_gateway
